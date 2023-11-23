@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "pack.description",
+      "name": "[BP]Minecraft_Parkour_Tools",
+      "uuid":"1a55f994-c7d9-4992-b9a5-76ac58dad134",
+      "version": [1, 0, 7],
+      "min_engine_version": [1, 19, 0]
+    },
+    "modules": [
+        {
+            "description":"GameTests module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "1a1b53fc-5653-4a75-91b7-9cdF027674ae",
+            "version": [0, 0, 1],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+          "module_name": "@minecraft/server",
+          "version": "1.1.0-beta"
+        },
+        {
+          "module_name": "@minecraft/server-gametest",
+          "version": "1.0.0-beta"
+        },
+        {
+          "module_name": "@minecraft/server-ui",
+          "version": "1.0.0-beta"
+        },
+        {
+          "description":"Minecraft parkour tools dedicated resource pack",
+          "uuid": "2e83a19a-80d2-4b18-8137-c01258dc3a2b",
+          "version": [1, 0, 1]
+        }
+      ]
+  }
