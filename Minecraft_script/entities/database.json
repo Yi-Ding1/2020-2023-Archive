@@ -1,0 +1,50 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "mcpk:database",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": {
+                  "cause": "all",
+                  "deals_damage": false
+                }
+            },
+            "minecraft:type_family": {
+            "family": [
+                "database"
+            ]
+            },
+            "minecraft:fire_immune": true,
+            "minecraft:movement": {
+            "value": 0
+            },
+            "minecraft:on_death": {
+            "event": "despawn",
+            "target": "self"
+            },
+            "minecraft:loot": {
+            "table": "loot_tables/empty.json"
+            },
+            "minecraft:physics": {
+            "has_gravity": false,
+            "has_collision": false
+            },
+            "minecraft:collision_box": {
+            "width": 0,
+            "height": 0
+            },
+            "minecraft:nameable": {
+            "always_show": false,
+            "allow_name_tag_renaming": false
+            },
+            "minecraft:scale": {
+            "value": 0
+            }
+        }
+    }
+}
